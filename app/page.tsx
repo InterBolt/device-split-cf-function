@@ -1,14 +1,13 @@
-import env from "@/env";
 import React from "react";
 import Mobile from "@/screens/Mobile";
 import Desktop from "@/screens/Desktop";
 import Fallback from "@/screens/Fallback";
 
 const Page = () => {
-  if (env.DEVICE === "mobile") {
+  if (process.env.DEVICE === "mobile") {
     return <Mobile />;
   }
-  if (env.DEVICE === "desktop") {
+  if (process.env.DEVICE === "desktop") {
     return <Desktop />;
   }
   return <Fallback />;

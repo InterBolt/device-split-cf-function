@@ -3,7 +3,7 @@
  **/
 
 const nextConfig = {
-  distDir: process.env.BUILD_DIR || 'out',
+  distDir: 'out',
   output: "export",
   publicRuntimeConfig: {
     basePath: process.env.DEVICE ? `/_${process.env.DEVICE}` : "",

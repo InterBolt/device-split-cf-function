@@ -1,6 +1,6 @@
 # About
 
-For more information on this repo, see the associated blog post: [https://interbolt.org/blog/split-it-and-forget-it/](https://interbolt.org/blog/split-it-and-forget-it/).
+For more information on this repo, see the associated blog post: [https://interbolt.org/blog/split-it-and-forget-it/](https://interbolt.org/blog/split-it-and-forget-it/#tutorial-start).
 
 # Hire me
 
