@@ -1,11 +1,11 @@
 "use client";
 
-import Mobile from "./Mobile";
-import Desktop from "./Desktop";
+import Mobile from "./mobile";
+import Desktop from "./desktop";
 import useIsMounted from "@/hooks/useIsMounted";
 import useMediaQuery from "@/hooks/useMediaQuery";
 
-const Fallback = () => {
+const Home = () => {
   const isDesktop = useMediaQuery("(min-width: 900px)");
   const mounted = useIsMounted();
 
@@ -16,7 +16,8 @@ const Fallback = () => {
   if (isDesktop) {
     return <Desktop />;
   }
+
   return <Mobile />;
 };
 
-export default Fallback;
+export default Home;

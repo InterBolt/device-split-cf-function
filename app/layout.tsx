@@ -1,5 +1,5 @@
 import React from "react";
-import "@/styles/globals.css"
+import "@/styles/globals.css";
 
 export default function RootLayout({
   children,
@@ -13,7 +13,7 @@ export default function RootLayout({
         content="An example site to show how to use Cloudflare Page Functions to serve different HTML based on the device type."
       />
       <title>Device Split CF Function</title>
-      <body className="app min-h-[100vh] bg-blue-800">{children}</body>
+      <body className="app min-h-[100vh]">{children}</body>
     </html>
   );
 }

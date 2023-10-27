@@ -1,16 +1,8 @@
 import React from "react";
-import Mobile from "@/screens/Mobile";
-import Desktop from "@/screens/Desktop";
-import Fallback from "@/screens/Fallback";
+import HomeScreen from "@/routes/Home/devices/responsive";
 
 const Page = () => {
-  if (process.env.DEVICE === "mobile") {
-    return <Mobile />;
-  }
-  if (process.env.DEVICE === "desktop") {
-    return <Desktop />;
-  }
-  return <Fallback />;
+  return <HomeScreen />;
 };
 
 export default Page;

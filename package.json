@@ -5,12 +5,14 @@
     "node": "18.15.0"
   },
   "scripts": {
-    "dev": "npx next",
+    "dev": "DEVICE=desktop npm run script:deviceImports && npm run script:throwOnNextLinkUsage && npx next",
     "build": "chmod +x scripts/build.sh && ./scripts/build.sh",
-    "dev:cf": "npx wrangler pages dev out"
+    "wrangler": "npx wrangler pages dev out",
+    "script:deviceImports": "node ./scripts/deviceImports.js",
+    "script:throwOnNextLinkUsage": "node ./scripts/throwOnNextLinkUsage.js"
   },
   "dependencies": {
-    "cf-url": "npm:url",
+    "npm-url": "npm:url@0.11.3",
     "next": "^13.5.4",
     "react": "^18.2.0",
     "react-device-detect": "^2.2.3",

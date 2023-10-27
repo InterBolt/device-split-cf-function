@@ -1,15 +1,15 @@
+const DEVICE = process.env.DEVICE || "responsive";
+
 /**
  * @type {import('next').NextConfig}
  **/
-
 const nextConfig = {
-  distDir: 'out',
+  assetPrefix: DEVICE !== "responsive" ? `/_${DEVICE}` : undefined,
+  distDir: process.env.BUILD_DIR || "out",
   output: "export",
-  publicRuntimeConfig: {
-    basePath: process.env.DEVICE ? `/_${process.env.DEVICE}` : "",
-  },
+  trailingSlash: true,
   env: {
-    DEVICE: process.env.DEVICE || "fallback",
+    DEVICE,
   },
 };
 
