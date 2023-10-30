@@ -1,9 +1,5 @@
 {
   "name": "device-split-cf-function",
-  "engines": {
-    "yarn": "1.22.19",
-    "node": "18.15.0"
-  },
   "scripts": {
     "dev": "DEVICE=desktop npm run script:deviceImports && npm run script:throwOnNextLinkUsage && npx next",
     "build": "chmod +x scripts/build.sh && ./scripts/build.sh",
